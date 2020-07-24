@@ -15,12 +15,12 @@ const Burger=(props)=>{
     {
         transformedIngredients=<p>Sirf bread khaoge kya -_-</p>
     }
-    console.log(transformedIngredients);
     return(
         <div className={styles.Burger}>
             <BurgerIngredient type="bread-top"/>
             {transformedIngredients}
             <BurgerIngredient type="bread-bottom"/>
+
         </div>
     );
 };
