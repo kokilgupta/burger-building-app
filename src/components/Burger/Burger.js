@@ -13,7 +13,7 @@ const Burger=(props)=>{
         },[]);
     if(transformedIngredients.length===0)
     {
-        transformedIngredients=<p>Sirf bread khaoge kya -_-</p>
+        transformedIngredients=<p>Add your ingredients</p>
     }
     console.log(transformedIngredients);
     return(
