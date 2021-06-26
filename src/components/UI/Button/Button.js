@@ -1,9 +1,12 @@
 import React from 'react';
-import styles from './Button.module.css';
-const Button =(props)=>
-    (
-        <button
-            className={[styles.Button,styles[props.btnType]].join(' ')}
-            onClick={props.clicked}>{props.children}</button>
-    );
-export default Button;
+
+import classes from './Button.css';
+
+const button = (props) => (
+    <button
+        disabled={props.disabled}
+        className={[classes.Button, classes[props.btnType]].join(' ')}
+        onClick={props.clicked}>{props.children}</button>
+);
+
+export default button;
